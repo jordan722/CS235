@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "Set.cpp"
-#include "Song.cpp"
-#include "PlayList.cpp"
-
+#include "Song.h"
+/*
+#include "PlayList.h"
+*/
 using namespace std;
 
 
@@ -22,19 +22,12 @@ int main() {
     Song song1;
 
     song1.setTitle("title 1");
-
     song1.setAuthor("author 1");
-
     song1.setAlbum("album 1");
 
-
-
     Song song2("title 2", "author 2", "album 2");
-
     Song song3("title 3", "author 3", "album 3");
-
     Song song4("title 4", "author 4", "album 4");
-
     Song song5("title 5", "author 5", "album 5");
 
 
@@ -52,13 +45,14 @@ int main() {
 
 
 
+
     //************* Test PlayList*************//
 
 
 
     //instantiate PlayList and add Songs to it
 
-
+/*
 
     PlayList myPlayList(song1);
 
@@ -123,11 +117,12 @@ int main() {
     myPlayList.displayPlayList();
 
     cout << myPlayList.isEmpty() << endl;
-
+*/
 
 
 
 
     return 0;
+
 
 }
