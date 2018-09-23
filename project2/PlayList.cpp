@@ -3,7 +3,7 @@ PlayList::PlayList(){
 
 
 PlayList::PlayList(const Song& a_song){
-  playlist_.addSong(a_song);
+  playlist_.add(a_song);
 }
 
 
@@ -28,12 +28,14 @@ bool PlayList::removeSong(const Song& a_song){
 
 
 void PlayList::clearPlayList(){
-  playlist_.clear()
+  playlist_.clear();
 }
 
 
 void PlayList::displayPlayList() const{
+  std::vector<Song>  song_vector = playlist_.toVector();
   for(int i = 0; i < playlist_.getCurrentSize(); i++){
-    std::cout << playlist_[i] << std::endl;
+    std::cout << "jo";
+    //std::cout << song_vector[i] << std::endl;
   }
 }

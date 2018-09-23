@@ -1,6 +1,8 @@
 #ifndef SET_H_
 #define SET_H_
 
+#include <string>
+
 #include "SetInterface.h"
 
 template<class ItemType>
@@ -18,13 +20,13 @@ private:
 
 public:
   Set();
-  int getCurrentSize() const = 0;
-  bool isEmpty() const = 0;
-  bool add(const ItemType& newEntry) = 0;
-  bool remove(const ItemType& anEntry) = 0;
-  void clear() = 0;
-  bool contains(const ItemType& anEntry) const = 0;
-  std::vector<ItemType> toVector() const = 0;
+  int getCurrentSize() const override;
+  bool isEmpty() const override;
+  bool add(const ItemType& newEntry) override;
+  bool remove(const ItemType& anEntry) override;
+  void clear() override;
+  bool contains(const ItemType& anEntry) const override;
+  std::vector<ItemType> toVector() const override;
 };
 
 #include "Set.cpp"

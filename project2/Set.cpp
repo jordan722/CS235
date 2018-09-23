@@ -32,12 +32,14 @@ template<class ItemType>
 bool Set<ItemType>::add(const ItemType& newEntry)
 {
   bool has_room_to_add = (item_count_ < max_items_);
-  if(has_room_to_add)
+  bool is_duplicate = (getIndexOf(newEntry) > -1);
+  bool can_add = has_room_to_add && !is_duplicate;
+  if(can_add)
   {
     items_[item_count_] = newEntry;
     item_count_++;
   }
-  return has_room_to_add;
+  return can_add;
 } // end add
 
 /** Removes a given entry from this set,if possible.
