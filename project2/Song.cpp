@@ -1,10 +1,11 @@
+
 Song::Song(){
-  title_ = "";
-  author_ = "";
-  album_ = "";
 }
 
-Song::Song(const std::string& title, const std::string& author = "", const std::string& album = ""):title_(title),author_(author),album_(album){
+Song::Song(const std::string& title, const std::string& author, const std::string& album){
+  title_ = title;
+  author_ = author;
+  album_ = album;
 }
 
 void Song::setTitle(std::string title){

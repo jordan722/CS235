@@ -1,6 +1,7 @@
 #ifndef SONG_H_
 #define SONG_H_
 
+
 class Song
 {
 private:
@@ -23,21 +24,5 @@ public:
 };
 
 #include "Song.cpp"
+
 #endif /* SONG_H_ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#include "Song.cpp"
-#endif /* SONG_H_*/
