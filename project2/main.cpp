@@ -1,9 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Song.h"
-/*
 #include "PlayList.h"
-*/
+
 using namespace std;
 
 
@@ -52,7 +51,6 @@ int main() {
 
     //instantiate PlayList and add Songs to it
 
-/*
 
     PlayList myPlayList(song1);
 
@@ -117,8 +115,6 @@ int main() {
     myPlayList.displayPlayList();
 
     cout << myPlayList.isEmpty() << endl;
-*/
-
 
 
 
