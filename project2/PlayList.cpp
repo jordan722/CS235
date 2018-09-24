@@ -1,3 +1,7 @@
+#include "PlayList.h"
+#include "Song.h"
+#include <iostream>
+
 PlayList::PlayList(){
 }
 
@@ -35,7 +39,10 @@ void PlayList::clearPlayList(){
 void PlayList::displayPlayList() const{
   std::vector<Song>  song_vector = playlist_.toVector();
   for(int i = 0; i < playlist_.getCurrentSize(); i++){
-    std::cout << "jo";
+    std::cout << "* Title: " << song_vector[i].getTitle()
+		          << " * Author: " << song_vector[i].getAuthor()
+		          << " * Album: " << song_vector[i].getAlbum() << " * " << '\n';
     //std::cout << song_vector[i] << std::endl;
   }
+  std:: cout << "End of playlist" << '\n';
 }

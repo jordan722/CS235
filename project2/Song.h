@@ -23,6 +23,4 @@ public:
 
 };
 
-#include "Song.cpp"
-
 #endif /* SONG_H_ */

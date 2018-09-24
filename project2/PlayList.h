@@ -20,6 +20,4 @@ public:
   void displayPlayList() const;
 
 };
-
-#include "PlayList.cpp"
 #endif /* end PLAYLIST_H_ */

@@ -1,3 +1,5 @@
+#include <string>
+#include "Song.h"
 
 Song::Song(){
 }

@@ -57,6 +57,7 @@ bool Set<ItemType>::remove(const ItemType& anEntry)
     item_count_--;
     items_[located_index] = items_[item_count_];
   }
+  return can_remove_item;
 } // end remove
 
 /** Removes all entries from this set.
