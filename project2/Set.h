@@ -19,12 +19,21 @@ private:
   int getIndexOf(const ItemType& target) const;
 
 public:
+  // default constructor
   Set();
+  // returns number of items in set
   int getCurrentSize() const override;
+  // returns whether the set is empty
   bool isEmpty() const override;
+  // adds item to set if possible
+  // returns true if item is added and false if not added
   bool add(const ItemType& newEntry) override;
+  // removes item from set if possible
+  // returns true if item is successfully removed and false if not
   bool remove(const ItemType& anEntry) override;
+  // removes all items from set
   void clear() override;
+  // returns whether the set contains a certain element
   bool contains(const ItemType& anEntry) const override;
   std::vector<ItemType> toVector() const override;
 };
